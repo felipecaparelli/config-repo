@@ -1,39 +1,39 @@
 example.property: "I AM IN THE DEFAULT"
 
-spring.jpa.database: "POSTGRESQL"
-spring.datasource.platform:  "postgres"
-spring.jpa.show-sql: "true"
-spring.datasource.driver-class-name: "org.postgresql.Driver"
-spring.datasource.url: "jdbc:postgres://manny.db.elephantsql.com:5432/yumiazwy"
-spring.datasource.username: "yumiazwy"
-spring.datasource.password: "{cipher}92d7b3efe996503390f1cb34dc2ba5eb4d085a9ce387d37497b201cb3f75834aa9eea93e633f2167e3e1b3e3099941427b6c3e138311e5306f5122ee1d8a8a45"
-spring.datasource.testWhileIdle: "true"
-spring.datasource.validationQuery: "SELECT 1"
-spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+#spring.jpa.database: "POSTGRESQL"
+#spring.datasource.platform:  "postgres"
+#spring.jpa.show-sql: "true"
+#spring.datasource.driver-class-name: "org.postgresql.Driver"
+#spring.datasource.url: "jdbc:postgres://manny.db.elephantsql.com:5432/yumiazwy"
+#spring.datasource.username: "yumiazwy"
+#spring.datasource.password: "{cipher}92d7b3efe996503390f1cb34dc2ba5eb4d085a9ce387d37497b201cb3f75834aa9eea93e633f2167e3e1b3e3099941427b6c3e138311e5306f5122ee1d8a8a45"
+#spring.datasource.testWhileIdle: "true"
+#spring.datasource.validationQuery: "SELECT 1"
+#spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
 
 ### Database Settings
-#spring:
-#  datasource:
-#    url: jdbc:h2:mem:example-app;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-#    platform: h2
-#    username: sa
-#    password:
-#    driverClassName: org.h2.Driver
-#  jpa:
-#    database-platform: org.hibernate.dialect.H2Dialect
-#    hibernate:
-#      ddl-auto: update
-#    properties:
-#      hibernate:
-#        show_sql: true
-#        use_sql_comments: true
-#        format_sql: true
+spring:
+  datasource:
+    url: jdbc:h2:mem:example-app;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    platform: h2
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
 
 ### H2 Settings
-#  h2:
-#    console:
-#      enabled: true
-#      path: /console
-#      settings:
-#        trace: false
-#        web-allow-others: false
+  h2:
+    console:
+      enabled: true
+      path: /console
+      settings:
+        trace: false
+        web-allow-others: false
